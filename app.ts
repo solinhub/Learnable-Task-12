@@ -69,7 +69,7 @@ app.patch('/api/v1/rooms/:id', authenticateToken, updateRoom);
 app.delete('/api/v1/rooms/:id', authenticateToken, deleteRoom);
 
 // Define PORT
-const PORT: number | string = process.env.PORT || 5000;
+const PORT: number | string = process.env.PORT || 3000;
 
 // Start the server
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
