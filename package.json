@@ -1,11 +1,12 @@
 {
-  "type": "module",
   "name": "hotel-mamagement",
   "version": "1.0.0",
   "description": "Backend API for hotel management system",
-  "main": "app.ts",
+  "main": "index.js",
   "scripts": {
-    "start": "node app.ts"
+    "start:dev": "nodemon",
+    "build": "tsc",
+    "start:prod": "node build/app.js"
   },
   "keywords": [
     "hotel",
@@ -16,9 +17,11 @@
     "MongoDB"
   ],
   "author": "Linda Eze",
+  "type": "module",
   "license": "ISC",
   "dependencies": {
     "@types/mongoose": "^5.11.97",
+    "@types/node": "^20.12.2",
     "bcrypt": "^5.1.1",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
@@ -35,6 +38,7 @@
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
     "@types/jsonwebtoken": "^9.0.6",
+    "tsx": "^4.7.1",
     "typescript": "^5.4.3"
   }
 }

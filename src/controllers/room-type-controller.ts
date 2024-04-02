@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import RoomType from '../models/room-type';
+import RoomType from '../models/room-type-model';
 
 // RoomType controller functions
 export const createRoomType = async (req: Request, res: Response): Promise<void> => {

@@ -6,19 +6,19 @@ import mongoose from 'mongoose';
 import dotenv from 'dotenv';
 import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
-import User from './models/user';
+import User from './models/user-model';
 import authenticateToken from './middlewares/auth';
 import authorizeAdmin from './middlewares/authz';
 import validateData from './middlewares/validation';
 import connectDB from './db';
-import { createRoomType, getAllRoomTypes } from './controllers/room-type';
+import { createRoomType, getAllRoomTypes } from './controllers/room-type-controller';
 import {
   createRoom,
   getAllRooms,
   getRoomById,
   updateRoom,
   deleteRoom,
-} from './controllers/room';
+} from './controllers/room-controller';
 import Joi from 'joi';
 
 dotenv.config();
