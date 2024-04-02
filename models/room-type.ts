@@ -1,8 +1,8 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 // Define RoomType model
 const RoomType = mongoose.model('RoomType', new mongoose.Schema({
     name: String,
 }));
 
-module.exports = RoomType;
+export default  RoomType;
