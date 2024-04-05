@@ -2,17 +2,16 @@
   "name": "hotel-mamagement",
   "version": "1.0.0",
   "description": "Backend API for hotel management system",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start:dev": "nodemon",
     "build": "tsc",
-    "start:prod": "node build/app.js"
+    "start": "node .build/src/app.js"
   },
   "keywords": [
     "hotel",
     "mamagement",
     "backend",
-    "app.ts",
     "Express",
     "MongoDB"
   ],
